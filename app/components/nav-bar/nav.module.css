@@ -1,0 +1,21 @@
+.nav{
+    @apply w-full max-w-2xl flex justify-between items-center py-4 px-8 rounded-full mx-8;
+    animation: show-nav-bg linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100px;
+}
+
+@keyframes show-nav-bg {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(8, 51, 68, 0.5);
+    }
+}
+
+@media(width<640px){
+    .nav_item{
+        display:none;
+    }
+}
