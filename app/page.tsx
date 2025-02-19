@@ -1,4 +1,5 @@
 import { Contact } from './components/contact/Contact';
+import { Experience } from './components/experience/Experience';
 import { NavBar } from './components/nav-bar/NavBar';
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
       <NavBar />
       <main className="pt-20 max-w-5xl mx-auto">
         <Contact />
-        <div className="h-[1000px]" />
+        <Experience />
       </main>
     </>
   );

@@ -13,9 +13,9 @@ export function NavBar() {
   console.log(underline);
   return (
     <>
-      <header className="flex justify-center sticky w-full top-4 items-center gap-4 px-8">
+      <header className="flex justify-center sticky w-full top-4 items-center gap-4 px-8 z-10">
         <nav className={styles.nav}>
-          <span className="text-yellow-400 font-bold text-2xl sm:text-4xl relative">SGS</span>
+          <span className="text-yellow-400 font-bold text-2xl sm:text-4xl">SGS</span>
           <div
             className="flex gap-4 sm:gap-8 relative cursor-pointer"
             onMouseLeave={() => {

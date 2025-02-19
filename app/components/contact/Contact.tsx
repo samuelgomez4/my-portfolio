@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { MdMail } from 'react-icons/md';
+import { contactLinks } from './constants';
 
 export function Contact({}) {
   return (
@@ -11,11 +10,15 @@ export function Contact({}) {
       </h1>
       <p className="text-2xl sm:text-4xl">Software Developer and Engineer</p>
       <div className="flex gap-4 items-center">
-        <Link
-          href="mailto:example@example.com"
-          title="Email me">
-          <MdMail className="text-4xl" />
-        </Link>
+        {contactLinks.map(({ href, title, icon: Icon }) => (
+          <a
+            href={href}
+            title={title}
+            target="_blank"
+            key={title}>
+            <Icon className="text-4xl" />
+          </a>
+        ))}
       </div>
     </section>
   );
