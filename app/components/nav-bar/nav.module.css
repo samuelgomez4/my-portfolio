@@ -9,7 +9,6 @@
     from {
         max-width: 72rem;
         background-color: transparent;
-        /* transform: translateX(-36px); */
     }
     1% {
         @apply shadow-lg backdrop-blur-lg;
@@ -20,29 +19,5 @@
         padding-left: 2rem;
         padding-right: 2rem;
         background-color: rgba(8, 51, 68, 0.5);
-    }
-}
-
-:root {
-    --translation-proportion: -15vw;
-}
-
-@media (width < 1024px) {
-    :root {
-        --translation-proportion: -5vw;
-    }
-}
-
-.nav_item{
-    @apply flex items-center gap-3;
-}
-
-.nav_item_icon{
-    @apply text-2xl flex items-end justify-center;
-}
-
-@media (max-width: 768px) {
-    .nav_item > span {
-        display: none;
     }
 }

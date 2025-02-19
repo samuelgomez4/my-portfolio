@@ -1,50 +1,52 @@
+'use client';
 import Link from 'next/link';
 import styles from './nav.module.css';
-import { IoIosInformationCircleOutline, IoMdContact } from 'react-icons/io';
-import { MdWork } from 'react-icons/md';
-import { TbDeviceDesktopCode } from 'react-icons/tb';
+import NAV_ITEMS from './constants';
+import { useState } from 'react';
+import { Underline } from './Underline';
 
 export function NavBar() {
+  const [underline, setunderline] = useState({
+    width: 0,
+    x: 0,
+  });
+  console.log(underline);
   return (
     <>
       <header className="flex justify-center sticky w-full top-4 items-center gap-4 px-8">
         <nav className={styles.nav}>
           <span className="text-yellow-400 font-bold text-2xl sm:text-4xl relative">SGS</span>
-          <div className="flex gap-4 sm:gap-8">
-            <Link
-              href="#contact"
-              className={styles.nav_item}
-              title="Contact">
-              <span>Contact</span>
-              <div className={styles.nav_item_icon}>
-                <IoMdContact />
-              </div>
-            </Link>
-            <Link
-              href="#experience"
-              className={styles.nav_item}
-              title="Experience">
-              <span>Experience</span>
-              <div className={styles.nav_item_icon}>
-                <MdWork />
-              </div>
-            </Link>
-            <Link
-              href="#projects"
-              className={styles.nav_item}
-              title="Projects">
-              <span>Projects</span>
-              <div className={styles.nav_item_icon}>
-                <TbDeviceDesktopCode />
-              </div>
-            </Link>
-            <Link
-              href="#about"
-              className={styles.nav_item}
-              title="About">
-              <span>About</span>
-              <IoIosInformationCircleOutline className={styles.nav_item_icon} />
-            </Link>
+          <div
+            className="flex gap-4 sm:gap-8 relative cursor-pointer"
+            onMouseLeave={() => {
+              setunderline((prevState) => ({
+                ...prevState,
+                width: 0,
+              }));
+            }}>
+            <Underline
+              className="bg-yellow-300"
+              width={underline.width}
+              x={underline.x}
+            />
+            {NAV_ITEMS.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="flex items-center gap-3"
+                title={item.title}
+                onMouseEnter={(e) => {
+                  setunderline({
+                    width: e.currentTarget.offsetWidth,
+                    x: e.currentTarget.offsetLeft,
+                  });
+                }}>
+                <span className="hidden md:block">{item.label}</span>
+                <div className="text-2xl flex items-end justify-center">
+                  <item.icon />
+                </div>
+              </Link>
+            ))}
           </div>
         </nav>
       </header>
