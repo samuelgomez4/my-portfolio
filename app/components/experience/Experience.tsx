@@ -6,7 +6,7 @@ import { ExperienceItem } from './experience-item/ExperienceItem';
 export function Experience({}) {
   const [showMore, setShowMore] = useState(false);
   return (
-    <section className="w-full flex flex-col px-10 gap-4">
+    <section className="flex flex-col gap-4">
       <h2 className="text-3xl font-bold text-balance">Experience</h2>
       <div
         className={`overflow-hidden px-2 transition-all duration-500 ${!showMore ? 'h-96 [mask-image:linear-gradient(black_70%,transparent)]' : 'h-[calc-size(max-content,size)]'}`}>
