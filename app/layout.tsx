@@ -3,7 +3,6 @@ import { Onest } from 'next/font/google';
 import './globals.css';
 
 const onest = Onest({
-  variable: '--font-onest',
   subsets: ['latin'],
 });
 
@@ -19,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${onest.variable} antialiased`}>{children}</body>
+      <body className={`${onest.className} antialiased`}>{children}</body>
     </html>
   );
 }
