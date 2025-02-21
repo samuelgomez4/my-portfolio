@@ -10,7 +10,6 @@ export function NavBar() {
     width: 0,
     x: 0,
   });
-  console.log(underline);
   return (
     <>
       <header className="flex justify-center sticky w-full top-4 items-center gap-4 px-8 z-10">
