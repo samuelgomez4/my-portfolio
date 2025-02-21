@@ -14,8 +14,9 @@ export const PROJECTS = [
     name: 'AIMyPlaylist',
     description: "A web application that generates a playlist based on the user's mood.",
     link: 'https://aimyplaylist.vercel.app/',
+    github: 'https://github.com/samuelgomez4/ai-my-playlist',
     images: ['/aimp-demo.png', '/aimp-playlist.png'],
-    thecnologies: [TECHNOLOGIES.next, TECHNOLOGIES.tailwind],
+    technologies: [TECHNOLOGIES.next, TECHNOLOGIES.tailwind],
   },
 ];
 
