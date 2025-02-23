@@ -2,12 +2,14 @@
 import { useState } from 'react';
 import { experiences } from './constants';
 import { ExperienceItem } from './experience-item/ExperienceItem';
+import { SectionTitle } from '../SectionTitle';
+import { MdWork } from 'react-icons/md';
 
 export function Experience({}) {
   const [showMore, setShowMore] = useState(false);
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="text-3xl font-bold text-balance">Experience</h2>
+      <SectionTitle icon={<MdWork />}>Experience</SectionTitle>
       <div
         className={`overflow-hidden px-2 transition-all duration-500 ${!showMore ? 'h-96 [mask-image:linear-gradient(black_70%,transparent)]' : 'h-[calc-size(max-content,size)]'}`}>
         <ol className="relative border-l-2 border-gray-700">
