@@ -12,7 +12,7 @@ export function Experience({}) {
     <section className="mb-20">
       <SectionTitle icon={<MdWork />}>Experience</SectionTitle>
       <div
-        className={`mb-10 overflow-hidden px-2 transition-all duration-500 ${!showMore ? 'h-96 [mask-image:linear-gradient(black_70%,transparent)]' : 'h-[calc-size(max-content,size)]'}`}>
+        className={`mb-10 overflow-hidden px-2 transition-all duration-500 ${!showMore ? 'h-80 [mask-image:linear-gradient(black_70%,transparent)]' : 'h-[calc-size(max-content,size)]'}`}>
         <ol className="relative border-l-2 border-gray-700">
           {experiences.map((experience, index) => (
             <ExperienceItem
