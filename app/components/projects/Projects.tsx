@@ -5,8 +5,10 @@ import { SectionTitle } from '../SectionTitle';
 
 export function Projects() {
   return (
-    <section className="mb-20">
-      <SectionTitle icon={<TbDeviceDesktopCode />}>Projets</SectionTitle>
+    <section
+      className="mb-20 scroll-mt-36"
+      id="projects">
+      <SectionTitle icon={<TbDeviceDesktopCode />}>Projects</SectionTitle>
       {PROJECTS.map((project) => (
         <ProjectItem
           key={project.name}

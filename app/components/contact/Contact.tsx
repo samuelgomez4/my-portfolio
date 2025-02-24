@@ -3,7 +3,9 @@ import { ContactItems } from './ContactItems';
 
 export function Contact({}) {
   return (
-    <section className="flex flex-col mb-20 items-center">
+    <section
+      className="flex flex-col mb-20 items-center scroll-mt-40"
+      id="contact">
       <h1 className="text-4xl sm:text-6xl font-bold text-center mb-2">
         <span className="text-yellow-400">S</span>amuel <span className="text-yellow-400">G</span>
         omez <span className="text-yellow-400">S</span>

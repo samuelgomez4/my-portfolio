@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <main className="pt-20 max-w-5xl mx-auto px-10">
+      <main className="pt-20 max-w-5xl mx-auto px-10 relative">
         <Contact />
         <Experience />
         <Projects />

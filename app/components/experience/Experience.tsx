@@ -9,7 +9,9 @@ import { IoIosArrowDropdownCircle } from 'react-icons/io';
 export function Experience({}) {
   const [showMore, setShowMore] = useState(false);
   return (
-    <section className="mb-20">
+    <section
+      className="mb-20 scroll-mt-36"
+      id="experience">
       <SectionTitle icon={<MdWork />}>Experience</SectionTitle>
       <div
         className={`mb-10 overflow-hidden px-2 transition-all duration-500 ${!showMore ? 'h-80 [mask-image:linear-gradient(black_70%,transparent)]' : 'h-[calc-size(max-content,size)]'}`}>
