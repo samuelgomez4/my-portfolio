@@ -8,7 +8,7 @@ interface Props {
 
 export function ProjectItem({ project }: Props) {
   return (
-    <article className="relative group flex flex-col sm:flex-row rounded-xl overflow-hidden  shadow-xl sm:items-center gap-8">
+    <article className="relative group flex flex-col sm:flex-row rounded-xl overflow-hidden  sm:items-center gap-8">
       <div className="relative overflow-hidden  flex-[2]">
         <div className="rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-purple-500 w-2/3 aspect-video -z-10 blur-3xl" />
         <ProjectImage

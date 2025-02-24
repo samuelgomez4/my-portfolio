@@ -17,10 +17,10 @@ export const PROJECTS = [
     github: 'https://github.com/samuelgomez4/ai-my-playlist',
     images: ['/aimp-demo.png', '/aimp-playlist.png'],
     technologies: [
-      TECHNOLOGIES.next,
-      TECHNOLOGIES.tailwind,
       TECHNOLOGIES.typescript,
       TECHNOLOGIES.react,
+      TECHNOLOGIES.tailwind,
+      TECHNOLOGIES.next,
     ],
   },
 ];

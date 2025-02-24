@@ -5,7 +5,7 @@ import { SectionTitle } from '../SectionTitle';
 
 export function Projects() {
   return (
-    <section>
+    <section className="mb-20">
       <SectionTitle icon={<TbDeviceDesktopCode />}>Projets</SectionTitle>
       {PROJECTS.map((project) => (
         <ProjectItem

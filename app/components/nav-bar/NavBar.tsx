@@ -2,14 +2,12 @@
 import Link from 'next/link';
 import styles from './nav.module.css';
 import NAV_ITEMS from './constants';
-import { useState } from 'react';
-import { Underline } from './Underline';
+import { Underline } from '../ui/underline/Underline';
+import { useUnderline } from '../ui/underline/useUnderline';
 
 export function NavBar() {
-  const [underline, setunderline] = useState({
-    width: 0,
-    x: 0,
-  });
+  const { underline, handleMouseEnter, handleMouseLeave } = useUnderline();
+
   return (
     <>
       <header className="flex justify-center sticky w-full top-4 items-center gap-4 px-8 z-10">
@@ -17,14 +15,9 @@ export function NavBar() {
           <span className="text-yellow-400 font-bold text-2xl sm:text-4xl">SGS</span>
           <div
             className="flex gap-4 sm:gap-8 relative cursor-pointer"
-            onMouseLeave={() => {
-              setunderline((prevState) => ({
-                ...prevState,
-                width: 0,
-              }));
-            }}>
+            onMouseLeave={handleMouseLeave}>
             <Underline
-              className="bg-yellow-300"
+              className="bg-yellow-300 top-7"
               width={underline.width}
               x={underline.x}
             />
@@ -34,12 +27,7 @@ export function NavBar() {
                 href={item.href}
                 className="flex items-center gap-3"
                 title={item.title}
-                onMouseEnter={(e) => {
-                  setunderline({
-                    width: e.currentTarget.offsetWidth,
-                    x: e.currentTarget.offsetLeft,
-                  });
-                }}>
+                onMouseEnter={handleMouseEnter}>
                 <span className="hidden md:block">{item.label}</span>
                 <div className="text-2xl flex items-end justify-center">
                   <item.icon />

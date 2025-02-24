@@ -11,7 +11,7 @@ export function Underline({ className, width, x }: Props) {
         width: width,
         transform: `translateX(${x}px)`,
       }}
-      className={`h-[3px] absolute top-7 rounded left-0 transition-all duration-300 ease-in-out ${className}`}
+      className={`h-[3px] absolute rounded left-0 transition-all duration-300 ease-in-out ${className}`}
     />
   );
 }
