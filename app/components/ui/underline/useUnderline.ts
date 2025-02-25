@@ -17,5 +17,5 @@ export function useUnderline() {
     }));
   };
 
-  return { underline, handleMouseEnter, handleMouseLeave };
+  return { underline, handleMouseEnter, handleMouseLeave, setUnderline };
 }

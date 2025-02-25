@@ -4,9 +4,38 @@ import styles from './nav.module.css';
 import NAV_ITEMS from './constants';
 import { Underline } from '../ui/underline/Underline';
 import { useUnderline } from '../ui/underline/useUnderline';
+import { useEffect } from 'react';
 
 export function NavBar() {
-  const { underline, handleMouseEnter, handleMouseLeave } = useUnderline();
+  const {
+    underline: hoverUnderline,
+    handleMouseEnter: hover,
+    handleMouseLeave: noHover,
+  } = useUnderline();
+  const { underline: activeUnderline, setUnderline } = useUnderline();
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const link = document.querySelector(`a[href="#${entry.target.id}"]`) as HTMLElement;
+            if (link) {
+              setUnderline({ width: link.offsetWidth, x: link.offsetLeft });
+            }
+          }
+        });
+      },
+      { threshold: 0.7 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, [setUnderline]);
 
   return (
     <>
@@ -19,11 +48,16 @@ export function NavBar() {
           </button>
           <div
             className="flex gap-4 sm:gap-8 relative cursor-pointer"
-            onMouseLeave={handleMouseLeave}>
+            onMouseLeave={noHover}>
             <Underline
-              className="bg-yellow-300 top-7"
-              width={underline.width}
-              x={underline.x}
+              className={`top-7 bg-yellow-400 z-10`}
+              width={hoverUnderline.width}
+              x={hoverUnderline.x}
+            />
+            <Underline
+              className={`top-7 bg-yellow-300`}
+              width={activeUnderline.width}
+              x={activeUnderline.x}
             />
             {NAV_ITEMS.map((item) => (
               <Link
@@ -31,7 +65,7 @@ export function NavBar() {
                 href={item.href}
                 className="flex items-center gap-3"
                 title={item.title}
-                onMouseEnter={handleMouseEnter}>
+                onMouseEnter={hover}>
                 <span className="hidden md:block">{item.label}</span>
                 <div className="text-2xl flex items-end justify-center">
                   <item.icon />

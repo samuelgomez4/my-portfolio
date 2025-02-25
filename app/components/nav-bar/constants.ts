@@ -4,25 +4,25 @@ import { TbDeviceDesktopCode } from 'react-icons/tb';
 
 const NAV_ITEMS = [
   {
-    href: '/#contact',
+    href: '#contact',
     title: 'Contact',
     label: 'Contact',
     icon: IoMdContact,
   },
   {
-    href: '/#experience',
+    href: '#experience',
     title: 'Experience',
     label: 'Experience',
     icon: MdWork,
   },
   {
-    href: '/#projects',
+    href: '#projects',
     title: 'Projects',
     label: 'Projects',
     icon: TbDeviceDesktopCode,
   },
   {
-    href: '/#about',
+    href: '#about',
     title: 'About',
     label: 'About',
     icon: IoIosInformationCircleOutline,
