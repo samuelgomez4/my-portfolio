@@ -9,12 +9,14 @@ export function Projects() {
       className="mb-20 scroll-mt-36"
       id="projects">
       <SectionTitle icon={<TbDeviceDesktopCode />}>Projects</SectionTitle>
-      {PROJECTS.map((project) => (
-        <ProjectItem
-          key={project.name}
-          project={project}
-        />
-      ))}
+      <div className="flex flex-col gap-20">
+        {PROJECTS.map((project) => (
+          <ProjectItem
+            key={project.name}
+            project={project}
+          />
+        ))}
+      </div>
     </section>
   );
 }

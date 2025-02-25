@@ -16,7 +16,21 @@ export const PROJECTS = [
     link: 'https://ai-my-playlist.vercel.app/',
     github: 'https://github.com/samuelgomez4/ai-my-playlist',
     images: ['/aimp-demo.png', '/aimp-playlist.png'],
-    backgroundColor: 'bg-purple-500',
+    backgroundColor: 'bg-purple-700',
+    technologies: [
+      TECHNOLOGIES.typescript,
+      TECHNOLOGIES.react,
+      TECHNOLOGIES.tailwind,
+      TECHNOLOGIES.next,
+    ],
+  },
+  {
+    name: 'Teslo Shop',
+    description: 'An online store for the latest Teslo products with seamless shopping experience.',
+    link: 'https://teslo-shop-rouge.vercel.app/',
+    github: 'https://github.com/samuelgomez4/Teslo-Shop',
+    images: ['/teslo-products.png', '/teslo-product.png'],
+    backgroundColor: 'bg-red-700',
     technologies: [
       TECHNOLOGIES.typescript,
       TECHNOLOGIES.react,
