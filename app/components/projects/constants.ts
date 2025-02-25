@@ -16,6 +16,7 @@ export const PROJECTS = [
     link: 'https://ai-my-playlist.vercel.app/',
     github: 'https://github.com/samuelgomez4/ai-my-playlist',
     images: ['/aimp-demo.png', '/aimp-playlist.png'],
+    backgroundColor: 'bg-purple-500',
     technologies: [
       TECHNOLOGIES.typescript,
       TECHNOLOGIES.react,
