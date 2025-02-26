@@ -17,7 +17,7 @@ export function Contact({}) {
       <div className="flex gap-4 flex-col sm:flex-row">
         <ContactItems />
         <a
-          href="https://f8gp4fwf5kvmobpb.public.blob.vercel-storage.com/Resume-Samuel-Gomez-uaZMPt1hxRNgEhHSzsA7D3uPQxpwHj.pdf"
+          href="https://f8gp4fwf5kvmobpb.public.blob.vercel-storage.com/Resume-Samuel-Gomez-SuPTzwdodBmZgrCJRQuBbAjmbjxu8X.pdf"
           className="bg-yellow-300 text-black px-4 py-4 rounded-full hover:bg-yellow-400 transition-colors font-semibold text-lg"
           target="_blank">
           View Resume <IoMdLink className="inline text-2xl" />
