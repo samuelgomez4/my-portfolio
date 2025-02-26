@@ -6,7 +6,7 @@ import { SectionTitle } from '../SectionTitle';
 export function Projects() {
   return (
     <section
-      className="mb-20 scroll-mt-36"
+      className="mb-28 scroll-mt-36"
       id="projects">
       <SectionTitle icon={<TbDeviceDesktopCode />}>Projects</SectionTitle>
       <div className="flex flex-col gap-20">

@@ -26,7 +26,8 @@ export const PROJECTS = [
   },
   {
     name: 'Teslo Shop',
-    description: 'An online store for the latest Teslo products with seamless shopping experience.',
+    description:
+      'A demo of an online store based on Tesla products with seamless shopping experience.',
     link: 'https://teslo-shop-rouge.vercel.app/',
     github: 'https://github.com/samuelgomez4/Teslo-Shop',
     images: ['/teslo-products.png', '/teslo-product.png'],

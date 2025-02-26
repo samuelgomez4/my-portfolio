@@ -19,7 +19,7 @@ export function ExperienceItem({ date, title, company, city, description }: Prop
           <p>{company}</p>
           <p className="text-sm text-gray-500">{city}</p>
         </div>
-        <ul className="text-base font-normal text-gray-300 flex-[2] list-disc pl-4">
+        <ul className="text-base font-normal flex-[2] list-disc pl-4">
           {description.map((item, index) => (
             <li
               key={index}

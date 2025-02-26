@@ -27,7 +27,7 @@ export function NavBar() {
           }
         });
       },
-      { threshold: 0.7 }
+      { threshold: 0.1, rootMargin: '0px 0px -70% 0px' }
     );
 
     sections.forEach((section) => observer.observe(section));
