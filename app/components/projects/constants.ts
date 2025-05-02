@@ -1,4 +1,5 @@
-import { BiLogoReact, BiLogoTypescript } from 'react-icons/bi';
+import { BiLogoPostgresql, BiLogoReact, BiLogoTypescript } from 'react-icons/bi';
+import { FaDocker } from 'react-icons/fa';
 import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri';
 
 const TECHNOLOGIES = {
@@ -6,6 +7,8 @@ const TECHNOLOGIES = {
   tailwind: { name: 'Tailwind CSS', icon: RiTailwindCssFill, color: '#38bdf8' },
   typescript: { name: 'TypeScript', icon: BiLogoTypescript, color: '#3178c6' },
   react: { name: 'React', icon: BiLogoReact, color: '#117ca4' },
+  docker: { name: 'Docker', icon: FaDocker, color: '#1d63ed' },
+  postgres: { name: 'PostgreSQL', icon: BiLogoPostgresql, color: '#336791' },
 };
 
 export const PROJECTS = [
@@ -37,6 +40,8 @@ export const PROJECTS = [
       TECHNOLOGIES.react,
       TECHNOLOGIES.tailwind,
       TECHNOLOGIES.next,
+      TECHNOLOGIES.postgres,
+      TECHNOLOGIES.docker,
     ],
   },
 ];
