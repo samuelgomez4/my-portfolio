@@ -5,9 +5,9 @@ export const experiences = [
     date: 'May 2022 – October 2024',
     city: 'London, Canada',
     description: [
-      'Developed a Python algorithm for analyzing large datasets and calculating ultra-low flow rates through nanopores in graphene that was not possible with conventional sensors.',
-      'Managed a MongoDB database to efficiently store and retrieve parameters necessary for each image used in flow rate calculations.',
-      'Automated the data analysis process, reducing the need for manual intervention and decreasing the time required to calculate flow rates for multiple datasets by 50%.',
+      'Developed a Python algorithm for analyzing and visualizing large datasets to calculate ultra-low flow rates through nanopores in graphene using Pandas, NumPy, and Matplotlib.',
+      'Processed and analyzed experimental datasets, including cleaning and organizing vector data obtained from micro-PIV, to extract meaningful patterns related to flow rates in graphene nanopores. This involved using mathematical models for calculating flow rates that were not possible with conventional sensors.',
+      'Managed and organized dataset parameters using JSON files, ensuring data integrity and accessibility for analysis.',
     ],
   },
   {
@@ -16,8 +16,8 @@ export const experiences = [
     date: 'August 2022 – December 2022',
     city: 'Remote, Colombia',
     description: [
-      'Collaborated with a team of 3 to migrate a radio station’s website from WordPress to a React with TypeScript and Express.js stack, using Git and GitHub for version control.',
-      'Implemented a RESTful API and database integration, improving the scalability of the site for the growing team and enabling better data management and dynamic content updates.',
+      'Collaborated with a team of 3 to create a radio station’s application with a Dango stack, using Git and GitHub for version control.',
+      'Implemented a RESTful API with Django and MySQL database integration, improving the scalability of the site for the growing team and enabling better data management and dynamic content updates.',
     ],
   },
   {
