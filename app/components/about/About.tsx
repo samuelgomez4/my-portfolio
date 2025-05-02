@@ -23,11 +23,14 @@ export function About() {
             web development—
             <span className="text-yellow-200">
               I applied it in my master’s thesis to tackle an engineering challenge.
-            </span>
+            </span>{' '}
+            This work led me to become proficient in tools like{' '}
+            <span className="text-yellow-200">Pandas, NumPy, and Matplotlib</span> for data
+            manipulation and visualization, alongside my existing coding skills.
           </p>
           <br />
           <p className="text-pretty">
-            I specialize in building applications with{' '}
+            I also specialize in building applications with{' '}
             <span className="text-yellow-200">React, Next.js, and Express.js</span>, leveraging{' '}
             <span className="text-yellow-200">TypeScript</span> for robust development. With a solid
             foundation in <span className="text-yellow-200">HTML, CSS, and JavaScript</span>, I
