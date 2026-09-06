@@ -1,5 +1,18 @@
 export const experiences = [
-  { title: 'Odoo ERP Consultant and Developer', company: 'FIRST LEVEL TECH S.A.C.', date: 'May 2025 – Present', city: 'Remote', description: ['Design and build Python modules that automate manual, spreadsheet-driven business processes for manufacturing and operations clients — including a pricing engine (BOM + cost data) that cut price-calculation time by ~90%, and a REST API integration that cut a manual documentation process to about a quarter of its original time.', 'Lead requirements-gathering and process mapping directly with clients, translating business needs into working ERP functionality across production, inventory, purchasing, and planning.', 'Diagnose and resolve complex, cross-module system issues from root cause through resolution, developing Python customizations that keep client systems accurate and stable.', 'Integrate Odoo with third-party platforms via REST APIs to extend functionality and automate cross-system workflows.', 'Design reports and business documents using QWeb, and write SQL/PostgreSQL queries to manage, extract, and analyze data across products, users, and inventory.', 'Support end users directly — training them and resolving issues in plain language to drive first-contact resolution.'] },
+  {
+    title: 'Odoo ERP Consultant and Developer',
+    company: 'FIRST LEVEL TECH S.A.C.',
+    date: 'May 2025 – Present',
+    city: 'Remote',
+    description: [
+      'Design and build Python modules that automate manual, spreadsheet-driven business processes for manufacturing and operations clients — including a pricing engine (BOM + cost data) that cut price-calculation time by ~90%, and a REST API integration that cut a manual documentation process to about a quarter of its original time.',
+      'Lead requirements-gathering and process mapping directly with clients, translating business needs into working ERP functionality across production, inventory, purchasing, and planning.',
+      'Diagnose and resolve complex, cross-module system issues from root cause through resolution, developing Python customizations that keep client systems accurate and stable.',
+      'Integrate Odoo with third-party platforms via REST APIs to extend functionality and automate cross-system workflows.',
+      'Design reports and business documents using QWeb, and write SQL/PostgreSQL queries to manage, extract, and analyze data across products, users, and inventory.',
+      'Support end users directly — training them and resolving issues in plain language to drive first-contact resolution.',
+    ],
+  },
   {
     title: 'Graduate Researcher',
     company: 'Western University',
